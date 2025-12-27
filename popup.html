@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Time Tracker</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <h1>Time Tracker</h1>
+      <div class="toggle-container">
+        <button id="btn-daily" class="toggle-btn active">Today</button>
+        <button id="btn-weekly" class="toggle-btn">This Week</button>
+      </div>
+    </header>
+
+    <main>
+      <div id="total-time-container">
+        <span class="label">Total Time</span>
+        <h2 id="total-time-display">0h 0m</h2>
+      </div>
+
+      <div class="stats-list" id="stats-list">
+        <!-- Items inserted by JS -->
+      </div>
+    </main>
+
+    <footer>
+      <p>Keep focused.</p>
+      <button id="btn-clear" title="Reset all stats">Reset Data</button>
+    </footer>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
